@@ -30,12 +30,12 @@ public class EvenNumTestTest {
     @Test
     public void givenEvenNumberShouldReturnEven() {
         String actualResult = evenNumTest.isEven(78);
-        assertEquals("True: It is a even number", actualResult);
+        assertEquals("It is an even number", actualResult);
     }
 
     @Test
     public void givenOddNumberShouldReturnOdd() {
         String actualResult = evenNumTest.isEven(59);
-        assertEquals("Tt is a odd number", actualResult);
+        assertEquals("It is an odd number", actualResult);
     }
 }
