@@ -36,18 +36,18 @@ public class PowerTest {
     @Test
     public void givenNumberLessThanFourShouldReturnErrorMessage() {
         int actualResult = power.powerChecker(-4);
-        assertEquals("Error: Please enter number greater than 4", actualResult);
+        assertEquals("Error:- Please enter number greater than 4", actualResult);
     }
 
     @Test
     public void givenStringshouldReturnErrorMessage() {
         String  actualResult = power.powerChecker("String");
-        assertEquals("Error: Please enter number not string", actualResult);
+        assertEquals("Error:- Please enter number not string", actualResult);
     }
 
     @Test
     public void givenNullshouldReturnErrorMessage() {
         String  actualResult = power.powerChecker("String");
-        assertNull("Error: Please enter a number", actualResult);
+        assertNull("Error:- Please enter a number", actualResult);
     }
 }
