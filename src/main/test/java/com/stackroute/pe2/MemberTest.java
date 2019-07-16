@@ -7,13 +7,15 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class MemberTest {
-    Member member;
 
+
+    private Member member;
+    // Creates object before running Test cases
     @Before
     public void setUp() {
         this.member = new Member();
     }
-
+    // Destroys object created after running test cases
     @After
     public void tearDown() {
         this.member = null;

@@ -5,17 +5,21 @@ import org.junit.*;
 import static org.junit.Assert.*;
 
 public class EvenNumTestTest {
-    EvenNumTest evenNumTest;
 
+    private EvenNumTest evenNumTest;
+
+
+    // Creates object before running Test cases
     @Before
     public void setUp() {
         this.evenNumTest = new EvenNumTest();
     }
-
+    // Destroys object created after running test cases
     @After
     public void tearDown() {
         this.evenNumTest = null;
     }
+
 
     @Test
     public void givenNullShouldReturnErrorMessage() {
@@ -24,14 +28,14 @@ public class EvenNumTestTest {
     }
 
     @Test
-    public void givenEvenNumberShouldReturnTrue() {
+    public void givenEvenNumberShouldReturnEven() {
         String actualResult = evenNumTest.isEven(78);
-        assertEquals("True", actualResult);
+        assertEquals("True: It is a even number", actualResult);
     }
 
     @Test
-    public void givenOddNumberShouldReturnFalse() {
+    public void givenOddNumberShouldReturnOdd() {
         String actualResult = evenNumTest.isEven(59);
-        assertEquals("False", actualResult);
+        assertEquals("Tt is a odd number", actualResult);
     }
 }

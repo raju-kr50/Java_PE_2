@@ -7,13 +7,15 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class PowerTest {
-    Power power;
 
+
+    private Power power;
+    // Creates object before running Test cases
     @Before
     public void setUp() {
         this.power = new Power();
     }
-
+    // Destroys object created after running test cases
     @After
     public void tearDown() {
         this.power = null;

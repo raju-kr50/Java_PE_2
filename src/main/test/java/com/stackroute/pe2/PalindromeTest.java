@@ -7,14 +7,14 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class PalindromeTest {
-
+    // Creates object before running Test cases
     Palindrome palindrome;
 
     @Before
     public void setUp() {
         this.palindrome = new Palindrome();
     }
-
+    // Destroys object created after running test cases
     @After
     public void tearDown() {
         this.palindrome = null;
