@@ -22,16 +22,41 @@ public class FactorialTest {
     }
 
     @Test
+    public void givenNegativeNumberShouldReturnError() {
+        String actualResult = factorial.factorialCheckerForInvalidNumber(-8);
+        assertEquals("Error: Please enter a valid number", actualResult);
+    }
+
+    @Test
+    public void givenZeroShouldReturnFactorial() {
+        int actualResult = factorial.factorialCheckerForInt(0);
+        assertEquals(1, actualResult);
+    }
+
+    @Test
     public void givenNumberShouldReturnFactorial() {
-         actualResult = factorial.factorialChecker(12);
+        int actualResult = factorial.factorialCheckerForInt(12);
         assertEquals(479001600, actualResult);
     }
 
     @Test
     public void givenNumberShouldReturnErrorMessage() {
-        String actualResult = factorial.factorialChecker(13);
-        assertEquals("not a factorial", actualResult);
+        long actualResult = factorial.factorialCheckerForLong(13);
+        assertEquals("6227020800", actualResult);
     }
+
+    @Test
+    public void givenNumberShouldReturnErrorMessage() {
+        long actualResult = factorial.factorialCheckerForLong(20);
+        assertEquals("2432902008176640000", actualResult);
+    }
+
+    @Test
+    public void givenStringShouldReturnFactorial() {
+        String  actualResult = factorial.factorialCheckerForString("Hello");
+        assertEquals("Error: Please enter a valid number", actualResult);
+    }
+
 
 
 }
