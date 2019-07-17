@@ -23,13 +23,13 @@ public class PowerTest {
 
     @Test
     public void givenPowerOfFourShouldReturnPowerOfFour() {
-        int actualResult = power.powerChecker(64);
+        String actualResult = power.powerChecker(64);
         assertEquals("The entered number is power of 4", actualResult);
     }
 
     @Test
     public void givenNotPowerOfFourShouldReturnNotPowerOfFour() {
-        int actualResult = power.powerChecker(80);
+        String actualResult = power.powerChecker(80);
         assertEquals("The entered number is not power of 4", actualResult);
     }
 
@@ -41,13 +41,13 @@ public class PowerTest {
 
     @Test
     public void givenStringshouldReturnErrorMessage() {
-        String  actualResult = power.powerChecker("String");
+        String  actualResult = power.powerCheckerString("String");
         assertEquals("Error:- Please enter number not string", actualResult);
     }
 
     @Test
     public void givenNullshouldReturnErrorMessage() {
-        String  actualResult = power.powerChecker("String");
+        String  actualResult = power.powerCheckerString("String");
         assertNull("Error:- Please enter a number", actualResult);
     }
 }
