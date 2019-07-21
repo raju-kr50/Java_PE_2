@@ -14,6 +14,7 @@ public class PalindromeTest {
     public void setUp() {
         this.palindrome = new Palindrome();
     }
+
     // Destroys object created after running test cases
     @After
     public void tearDown() {
@@ -29,32 +30,21 @@ public class PalindromeTest {
     @Test
     public void givenNonPalindromeNumberShouldReturnNotPalindrome() {
         String actualResult = palindrome.checkPalindrome("6342554");
-        assertEquals("Not Palindrome",actualResult);
+        assertEquals("Not Palindrome", actualResult);
     }
 
     @Test
     public void givenPalindromeStringShouldReturnItsPalindrome() {
         String actualResult = palindrome.checkPalindrome("wertytrew");
-        assertEquals("Palindrome",actualResult);
+        assertEquals("Palindrome", actualResult);
     }
 
     @Test
     public void givenNonPalindromeStringShouldReturnNotPalindrome() {
         String actualResult = palindrome.checkPalindrome("djwdwyb");
-        assertEquals("Not Palindrome",actualResult);
+        assertEquals("Not Palindrome", actualResult);
     }
-//
-//    @Test
-//    public void givenNegativeNumberShouldReturnErrorMessage() {
-//        int actualResult = palindrome.checkPalindromeNumber(-2627126);
-//        assertEquals("Error: Please enter valid number or string",actualResult);
-//    }
-//
-//    @Test
-//    public void givenNumberLessThanHundredShouldReturnTryAgain() {
-//        int actualResult = palindrome.checkPalindromeNumber(44);
-//        assertEquals("Try again with number greater than 100",actualResult);
-//    }
+
 
     @Test
     public void givenNullShouldReturnErrorMessage() {

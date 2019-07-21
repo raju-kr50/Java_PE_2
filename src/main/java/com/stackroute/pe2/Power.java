@@ -5,12 +5,11 @@ public class Power {
     public String powerChecker(String inputNumber) {
         try {
             int integerInput = Integer.parseInt(inputNumber);
-        }
-        catch (NumberFormatException nfe){
+        } catch (NumberFormatException nfe) {
             return "Error:- Please enter number not string";
         }
 
-        String result="";
+        String result = "";
         int integerInput = Integer.parseInt(inputNumber);
         if (integerInput < 0) {
             return "Error:- Please enter number greater than 4";

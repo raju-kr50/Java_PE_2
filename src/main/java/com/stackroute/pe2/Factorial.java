@@ -18,7 +18,7 @@ public class Factorial {
     }
 
     public String factorialCheckerForLong(int number) {
-        long factorial=1;
+        long factorial = 1;
         String result;
         for (int i = 1; i <= number; i++) {
             factorial *= i;

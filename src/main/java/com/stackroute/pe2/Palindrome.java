@@ -4,9 +4,9 @@ public class Palindrome {
 
 
     public String checkPalindrome(String input) {
-        String result="";
+        String result = "";
         String reversedString = "";
-        if(input==null){
+        if (input == null) {
             return "Error: Please enter valid number or string";
         } else {
 

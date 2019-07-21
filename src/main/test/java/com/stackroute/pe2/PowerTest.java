@@ -10,11 +10,13 @@ public class PowerTest {
 
 
     private Power power;
+
     // Creates object before running Test cases
     @Before
     public void setUp() {
         this.power = new Power();
     }
+
     // Destroys object created after running test cases
     @After
     public void tearDown() {
@@ -41,7 +43,7 @@ public class PowerTest {
 
     @Test
     public void givenStringShouldReturnErrorMessage() {
-        String  actualResult = power.powerChecker("String");
+        String actualResult = power.powerChecker("String");
         assertEquals("Error:- Please enter number not string", actualResult);
     }
 

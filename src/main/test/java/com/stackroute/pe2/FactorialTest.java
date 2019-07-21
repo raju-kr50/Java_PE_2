@@ -10,11 +10,13 @@ public class FactorialTest {
 
 
     private Factorial factorial;
+
     // Creates object before running Test cases
     @Before
     public void setUp() {
         this.factorial = new Factorial();
     }
+
     // Destroys object created after running test cases
     @After
     public void tearDown() {

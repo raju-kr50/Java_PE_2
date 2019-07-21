@@ -24,13 +24,13 @@ public class MemberVariableTest {
 
     @Test
     public void givenDetailsShouldReturnCorrectMessage() {
-        String actualResult = member.details("Harry Potter",30,2500.3);
+        String actualResult = member.details("Harry Potter", 30, 2500.3);
         assertEquals("The details you entered is correct", actualResult);
     }
 
     @Test
     public void givenDetailsShouldReturnIncorrectMessage() {
-        String actualResult = member.details("Harry Ptter",37,2500.3);
+        String actualResult = member.details("Harry Ptter", 37, 2500.3);
         assertEquals("The details you entered is incorrect", actualResult);
     }
 
